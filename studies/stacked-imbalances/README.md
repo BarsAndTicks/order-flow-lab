@@ -2,7 +2,7 @@
 
 NQ 12-26 (42 sessions, 15 Sep to 13 Nov 2026) and ES 12-26 (43 sessions, 11 Sep to 13 Nov 2026), 1-minute bars with
 Tick Replay. 2,322 stacked imbalance zones: 3 or more consecutive prices with an imbalance on the same side
-(Footprint Chart PRO defaults: diagonal ratio 4, minimum volume 10, 3 stacked levels, 1 tick per row).
+(Bars & Ticks Footprint defaults: diagonal ratio 4, minimum volume 10, 3 stacked levels, 1 tick per row).
 
 | | NQ stacked | NQ random | ES stacked | ES random |
 |---|---|---|---|---|

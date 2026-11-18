@@ -16,7 +16,7 @@ aggregated results, including the ones that do not flatter the tools we sell.
 
 ## How the studies work
 
-- **Data**: 1-minute bars built with Tick Replay in NinjaTrader 8, exported to CSV by Footprint Chart PRO.
+- **Data**: 1-minute bars built with Tick Replay in NinjaTrader 8, exported to CSV by the Bars & Ticks Footprint indicator.
   The raw market data is **not** included: exchange data cannot be redistributed. Only the code and the aggregated
   statistics are published.
 - **Baseline**: every study compares the pattern with a random control drawn from the same bars, so a result only
@@ -30,7 +30,7 @@ python studies/stacked-imbalances/stacked_study.py "<folder with the CSV exports
 python studies/stacked-imbalances/stacked_study.py "<folder with the CSV exports>" ES
 ```
 
-The script reads every `FootprintPRO_<SYMBOL>_*.csv` file in the folder. Columns used:
+The script reads every `FootprintPRO_<SYMBOL>_*.csv` file in the folder (the file name keeps the indicator's internal name). Columns used:
 `Time` (`YYYY-MM-DD HH:MM:SS`), `High`, `Low`, `Close`, `Volume`, and `BullStacks` / `BearStacks`
 (stacked zones of the bar as `low-high` price ranges separated by `|`, e.g. `21000.25-21000.75|21003-21003.5`).
 Any 1-minute export with those columns works; the tick size is 0.25 (NQ, ES).

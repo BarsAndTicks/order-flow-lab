@@ -1,5 +1,5 @@
 """Stacked imbalance zones on NQ 1-minute bars: are they revisited, how fast, are they broken.
-Input: Footprint Chart PRO CSV exports (BullStacks / BearStacks columns). Descriptive statistics only."""
+Input: Bars & Ticks Footprint CSV exports (BullStacks / BearStacks columns). Descriptive statistics only."""
 import csv, glob, random, statistics, sys
 from datetime import datetime, timedelta
 
